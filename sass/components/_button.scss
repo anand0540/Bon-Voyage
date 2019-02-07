@@ -1,0 +1,147 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+       text-decoration: none;
+       text-transform: uppercase;
+       padding: 1rem 2.5rem;
+       border-radius: 10rem;
+       transition: all .2s;
+       display: inline-block;
+       position: relative;
+       font-size: $default-font-size ;
+       animation-name: moveInTop;
+        animation-duration: 1s; 
+        animation-timing-function: ease-out;
+        animation-delay: .75s;
+        animation-fill-mode: backwards;
+        border:none;
+        cursor: pointer;
+
+        
+        //btn btn2 btn2--green-2 btn--animated2
+    }
+        &:hover{
+            transform: translateY(-.3rem);
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+            &::after{
+                transform: scalex(1.5) scaleY(1.6);
+                opacity:0;
+             }
+            }
+            &:active,
+                &:focus{
+
+                outline:none;
+               transform: translateY(-2px);
+               box-shadow: 0 .5rem 2rem rgba($color-black, 0.3);
+            
+            
+            }
+            &--white{
+                
+               background-color: $color-white;
+               color:$color-grey-dark;
+               &::after{
+                background-color: $color-white;
+             }
+            } 
+            &--green{
+                background-color: $color-primary;
+                color:$color-white;
+                &::after{
+                    background-color: $color-primary;}
+                
+            }
+
+           
+             
+            &::after
+            {
+               content: "";
+               display: inline-block;
+               height: 100%;
+               width: 100%;
+               border-radius: 10rem;
+               position: absolute;
+               top:0;
+               left:0;
+               z-index: -1;
+               transition: all .4s;
+            } 
+            &--animated {
+                animation: moveInTop .5s ease-out .75s;
+               animation-fill-mode: backwards;
+               } 
+            &-a{
+                border-radius:2px;
+                position:absolute;
+                left:20%;
+                margin-top: 3rem;
+            }
+              
+    
+            }
+
+
+            .btn2{
+                &:link,
+                &:visited{
+                    margin:1rem;
+                    border-radius:.8rem ;
+                    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);  
+                    background-clip: content-box;
+                    -webkit-background-clip: text;
+                    color:transparent;
+                    
+                }
+                    &:hover{
+                        transform: translateY(-.3rem);
+                        box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+                        &::after{
+                            transform: scalex(1.5) scaleY(1.6);
+                            opacity:0;
+                         }
+                        }
+                        &:active{
+                           transform: translateY(-2px);
+                           box-shadow: 0 .5rem 2rem rgba($color-black, 0.3);
+                        
+                        
+                        }
+                       
+                        
+                        &--green-2{
+                            background-color:$color-primary-light-2 ;
+                            
+                            &::after{
+                             background-color: $color-white;
+                          }
+        
+                         }
+                        &::after
+                        {
+                           content: "";
+                           display: inline-block;
+                           height: 100%;
+                           width: 100%;
+                           border-radius: .8rem;
+                           position: absolute;
+                           top:0;
+                           left:0;
+                           z-index: -1;
+                           transition: all .4s;
+                        } 
+                        &--animated2 {
+                            animation: moveInTop .5s ease-out .75s;
+                           animation-fill-mode: backwards;
+                           } 
+                        
+                
+            
+                        }
+
+                
+                        
+          
+            

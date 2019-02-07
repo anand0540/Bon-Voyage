@@ -1,0 +1,75 @@
+.prim-head
+   {
+       color: $color-white;
+       text-transform: uppercase;
+       margin-bottom: 5rem;
+       backface-visibility: hidden;
+       &--main
+       {
+         display: block;
+         font-size: 6rem;
+         font-weight: 400rem;
+         letter-spacing: 2rem;  
+         animation-name: moveInLeft;
+         animation-duration: 1s; 
+         animation-timing-function: ease-out;
+         transform: translate(-10%,0%);
+       }
+       &--sub
+       {
+         display: block;
+         font-size: 2.5rem;
+         font-weight: 100rem;
+         letter-spacing: 1.4rem;   
+         animation-name: moveInRight;
+         animation-duration: 1s; 
+         animation-timing-function: ease-out;
+       }   
+      
+   }
+   .sec-head{
+    
+     font-size:3.5rem;
+     text-transform: uppercase;
+     font-weight:700;
+     display: inline-block;
+     background-image: linear-gradient(to right, #08eca0d0, #f0660bce);
+     background-clip: content-box;
+     -webkit-background-clip: text;
+     color: transparent;
+     
+  &:hover {
+ /*transform: skewX(20deg) skewY(5deg) scale(1.1);*/
+ text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+
+} 
+}
+   
+  
+
+.ter-head{
+  font-size: $default-font-size;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  &-main{
+    color: $color-grey-dark;
+    text-decoration-style: solid;
+    font-size:1.8rem;
+  }
+  &-sub
+  {
+    color: $color-grey-dark;
+
+  }
+
+}
+
+.paragraph{
+  font-size: $default-font-size;
+  &:not(:last-child){
+    margin-bottom:3rem;
+  }
+
+  }
+
